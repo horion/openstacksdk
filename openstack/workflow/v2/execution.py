@@ -26,7 +26,7 @@ class Execution(resource.Resource):
 
     _query_mapping = resource.QueryParameters(
         'marker', 'limit', 'sort_keys', 'sort_dirs', 'fields', 'params',
-        'include_output')
+        'include_output', 'workflow_name')
 
     #: The name of the workflow
     workflow_name = resource.Body("workflow_name")
