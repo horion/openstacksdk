@@ -25,7 +25,7 @@ class Workflow(resource.Resource):
     allow_delete = True
 
     _query_mapping = resource.QueryParameters(
-        'marker', 'limit', 'sort_keys', 'sort_dirs', 'fields','workflow_name')
+        'marker', 'limit', 'sort_keys', 'sort_dirs', 'fields')
 
     #: The name of this Workflow
     name = resource.Body("name")
